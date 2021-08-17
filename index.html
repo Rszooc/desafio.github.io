@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="mhead">
+        <img src="/img/movie.png" alt="">
+        <h1>Comparador</h1>
+    </header>
+    <main class="maincontent">
+        <h2>Elige con cuidado</h2>
+        <section class="content_Main">
+            <article>
+                <p>Comparador</p>
+            </article>
+            <form class="mvContent_form">
+                <div class="mvContent_label">
+                    <label for="pelicula">Ingresa el número de peliculas</label>
+                    <input id="pelicula" type="number" placeholder="# de peliculas">
+                </div>
+                <div>
+                    <input list="tipoSala">
+                    <datalist id="tipoSala">
+                        <option value="Sala estándar"></option>
+                        <option value="Sala IMAX"></option>
+                        <option value="Sala VIP"></option>
+                    </datalist>
+                </div>
+                <button type="button" onclick="testeoJava()">Cotiza</button>
+            </form>
+            
+        </section>
+    </main>
+    <footer class="fcontainer">
+        <p> &copy; 2021 Rszoo </p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
