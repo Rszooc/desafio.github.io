@@ -4,20 +4,22 @@ function testeoJava() {
 // Experimento para checkbox
 
 function sumaStreaming() {
+    // Obteniendo el objeto de elementos de checkbox
     let seleccionados = document.getElementById("miform").streaming;
-    let test = [];
-    console.log(seleccionados);
+    let valores = [];
     for (let i=0; i < seleccionados.length; i++) {
         if (seleccionados[i].checked) {
-            test.push(Number(seleccionados[i].value));
+            valores.push(Number(seleccionados[i].value));
             // acumulador = acumulador + Number(checkboxes[x].value);
             }
         }
-    const acumular = (acumulador,numero) =>  acumulador+ numero;
-    const acumulado = test.reduce(acumular,0);
-    console.log(test);
-    console.log(acumulado);
+    const acumular = (acumulador,numero) => acumulador + numero;
+    const acumulado = valores.reduce(acumular,0);
     return acumulado;
+}
+
+function testeo2() {
+    console.log(sumaStreaming());
 }
 
 function peliculas (numMovies) {
