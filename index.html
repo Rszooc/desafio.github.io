@@ -18,48 +18,49 @@
             <!-- <article class="main_titulo">
                 <p>Toma la mejor decisión</p>
             </article> -->
-            <form class="main_form">
+            <form class="main_form" id="miform">
                 <div class="main_form_contents">
                     <label for="pelicula">Número de peliculas: </label>
-                    <input id="pelicula" type="number" placeholder=" Número">
+                    <input id="pelicula" type="number" placeholder="0" required>
                 </div>
                 <div class="main_form_contents">
-                    <label for="pelicula">Número de series: </label>
-                    <input id="pelicula" type="number" placeholder=" Número">
+                    <label for="series">Número de series: </label>
+                    <input id="series" type="number" placeholder="0" required>
                 </div>
+                <button type="button" onclick="operacion1()">Pruebas</button>
                 <div class="main_servicios">
                     <p>Servicios Streaming</p>
                     <div class="main_servicios_checkbox">
                         <div>
-                            <input type="checkbox" name="prime" id="prime" value="99">
+                            <input type="checkbox" name="streaming" id="prime" value="99">
                             <label for="prime">Prime</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="youtube" id="youtube" value="119">
+                            <input type="checkbox" name="streaming" id="youtube" value="119">
                             <label for="youtube">YouTube</label>
                         </div>
                     </div>
                     <div class="main_servicios_checkbox">
                         <div>
-                            <input type="checkbox" name="Fox" id="Fox" value="139">
+                            <input type="checkbox" name="streaming" id="Fox" value="139">
                             <label for="Fox">Fox</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="disney" id="disney" value="159">
+                            <input type="checkbox" name="streaming" id="disney" value="159">
                             <label for="disney">Disney+</label>
                         </div>
                     </div>
                     <div class="main_servicios_checkbox">
                         <div>
-                            <input type="checkbox" name="hbo" id="hbo" value="149">
+                            <input type="checkbox" name="streaming" id="hbo" value="149">
                             <label for="hbo">HBO Go</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="netflix" id="netflix" value="169">
+                            <input type="checkbox" name="streaming" id="netflix" value="169">
                             <label for="netflix">Netflix</label>
                         </div>
                     </div>
-
+                    <button type="button" onclick="sumaStreaming()">Suma</button>
                 </div>
                 <button type="button" onclick="testeoJava()">Cotiza</button>
             </form>
