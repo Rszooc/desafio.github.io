@@ -15,21 +15,51 @@
     <main class="maincontent">
         <h2>Elige con cuidado</h2>
         <section class="content_Main">
-            <article>
-                <p>Comparador</p>
-            </article>
-            <form class="mvContent_form">
-                <div class="mvContent_label">
-                    <label for="pelicula">Ingresa el número de peliculas</label>
-                    <input id="pelicula" type="number" placeholder="# de peliculas">
+            <!-- <article class="main_titulo">
+                <p>Toma la mejor decisión</p>
+            </article> -->
+            <form class="main_form">
+                <div class="main_form_contents">
+                    <label for="pelicula">Número de peliculas: </label>
+                    <input id="pelicula" type="number" placeholder=" Número">
                 </div>
-                <div>
-                    <input list="tipoSala">
-                    <datalist id="tipoSala">
-                        <option value="Sala estándar"></option>
-                        <option value="Sala IMAX"></option>
-                        <option value="Sala VIP"></option>
-                    </datalist>
+                <div class="main_form_contents">
+                    <label for="pelicula">Número de series: </label>
+                    <input id="pelicula" type="number" placeholder=" Número">
+                </div>
+                <div class="main_servicios">
+                    <p>Servicios Streaming</p>
+                    <div class="main_servicios_checkbox">
+                        <div>
+                            <input type="checkbox" name="prime" id="prime" value="99">
+                            <label for="prime">Prime</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="youtube" id="youtube" value="119">
+                            <label for="youtube">YouTube</label>
+                        </div>
+                    </div>
+                    <div class="main_servicios_checkbox">
+                        <div>
+                            <input type="checkbox" name="Fox" id="Fox" value="139">
+                            <label for="Fox">Fox</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="disney" id="disney" value="159">
+                            <label for="disney">Disney+</label>
+                        </div>
+                    </div>
+                    <div class="main_servicios_checkbox">
+                        <div>
+                            <input type="checkbox" name="hbo" id="hbo" value="149">
+                            <label for="hbo">HBO Go</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="netflix" id="netflix" value="169">
+                            <label for="netflix">Netflix</label>
+                        </div>
+                    </div>
+
                 </div>
                 <button type="button" onclick="testeoJava()">Cotiza</button>
             </form>
